@@ -1,49 +1,95 @@
-# What Is Emmet ?
-
-  => Emmet Uses Different Abbreviations And Short Expressions Depending On What Passes And Then Dynamically Converts The Abbreviations Into Full Code.
-  => Emmet Takes The Snippets Idea To A Whole New Level: You Can Type Css-Like Expressions That Can Be Dynamically Parsed And Produce Output Depending On What You Type In The Abbreviation.
-
-# Difference Between A Library And FrameWork?
-
-  => Library 
-            => Library Is Collection Of Pre-Written Code That Can Be Used To Perform Common Tasks Or Add Specific. Library Provides Pre-Written And Tested And Debugged Code That Can Be Reused Across Projects.
+# What Is 'NPM' ?
   
-  => Framework
-            => A Framework Is A Software Plateform That Provides Developers With Pre-Built Tools And Libraries To Simplify To The Development Of Web Applications.
+  => NPM Is Package Manager
+  => If You Have A Comman Task Or A Comman Feature To Made Than You Can Use NPM There Are Milions Of Developers Are There, They Have Already Made That Feature And Put It In A Module And Pushed That Module To The Reposetry To Use That Module For Free For Everyone.
+  => You Can Also Make a Module And Push It To The Reposetry.
+
+# What Is 'Parcel/Webpack'? Why Do We Need It?
+
+  => Parcel Is A Fast And Zero Configuration Front-End Buid Tool.
+  => Parcel Gives Us Many Tools Like Hot Loading Good Error Messages On Screen And Gives Ecxect Point Where Is Error Is Made.
+  => Parcel Also Gives As A Buid Feature That Optimizes Our App For Production By Tree-Shaking And Minifying Our Code Autometically.
+
+# What Is '.Pacel-cache'
+  
+  => Parcel Caches Everything And Tracks All Of The File, Configuration,Dependencies If You Restart You Server Parcel Do Not Buildm Everything From Start Its Only Checks What Changes Are Made Since Last Time You Run A Server And Compare Everything And Gives Us A End Product. Parcel Is Fast Because It's Caches Everything.
+
+# What Is 'NPX'?
+
+  => NPX Stands For Node Package Execute.
+  => NPX Is A Package Runner.
+  => NPX Allows Us To Run Any Packages That Available On NPM Without Even Installing It.
+  => With NPX We Can Make Our Code Light-Wighted Since It Does Not Install Every Package That We Use.
+  => NPX Help Us When We Need To Use A Single Package Just For Once,In That Case Installing And Managing It's Become Bundle That's Why We Use NPX. 
+
+# What Is Difference Between 'dependencies' VS 'devDependencies'
+
+  => Dependencies and devDependencies Are Plain Json Objects In Package.json Both Containes The Name And Version Of The Modules That Our Code Is Dependent
+  => Devdependencie Contains Names And Versions Of The Modules Which Are Required Only For Devlopment
+  => Dependencie Contains Name And Version Of The Node Modules Wich Are Required At Runtime.
+
+# What Is Tree Shaking ?
+
+  => Tree Shaking Is Term Called For Removing Dead OR Unused Code.
+  => When We Bundling Our Code There Will Be A Dead Or Unused Code That Make Our Applications File Size Big,That's When Tree Shaking Comes Tree Shaking Do Not Include This Unused Code In Our Bundle Files.
+
+# What Is Hot Module Replacement?
+
+  => Hot Module Replacement Is When Ever You Write Code To See The Output You Need To Refresh The Page Everytime You Change The Code You Need To Refresh The Page
+  => To Solve This Problem HMR Comes Hot Module Replacement Is Basically When You First Time Build The Application Webpack Generates A Manifest File The Manifest Contains A Compilation HASH And A List Of All Modules.
+  => Everytime You Change The File The Change Is Detected By A WebPack.
+  => The WebPack Compiler Will Build Your Application With The Changes Creating A New Manifest File And Comparing It With The Old One And Updates In UI Only Tag Or Components You Change.
+
+# List Down Your Favourite 5 Super Power Of Parcel And Describe Any 3 Of Them In Your Own Words.
+
+  => Hot Reloading
+  => Caching
+  => Tree Shaking
+  => Production Build
+  => Auto Install
+
+     #> Hot Reloading => In Hot Reloading As You Make Change In Your Code Parcel Autometically Rebuild The Changed File And Updates Your App.
+     #> By Default Parcel Fully Reload's The Page But Some Tume It Performs The Hot Module Replacement.
+
+     #> Caching => Parcel Caches Everything That We Build In Our Code If You Restart Your Server Parcel Will Only Rebuild Files That Have Changed Since Last Time It Ran The Server.
+
+     #> Tree Shaking => While Building Our Code For Production Tree Shaking Removes Dead Or Unused Code From Our Build Files Making Our Build File Size Minimum.
+  
+# What Is '.gitignore'? What Should We Add And Not Add Into It?
+  
+  => GitIgnore Is File Where We Save Our File That We Dont Push To The Git.
+  => We Should Add Files Like Node_Modules Or Files Like Reinstallabel That Can We Install Via Package.log.
+  => We Should Not Add Files That Containes Our Code That Need Running Like Js Files CSS Files HTML Files ETC.
+
+# WHat Is Difference Between 'Package.json' And 'Package-lock.json'
+
+  => Package.json Is Configuration Json Object Of NPM.
+  => It Contains Inforamatoin About Our Projects Such As Name Version Aurthor ETC.
+  => It Contains Dependencies With Thair Versions Number So These Dependencies Autometically Installed Or Updates While Our Project Is Set Up.
+  => Package-lock.json File Contains Ecxact Version Of Every Installed Dependencies.
+  => Since It Keeps Track Of Ecxact Version Of Dependencies It Help Us When We Are Working In A Team It Keeps Everyone On Same Version.
+
+# Why Should I Not Modify 'Package-lock.json'?
+
+  => Package-lock.json File Provides Environment Where All The Team Members Can Work On Same Version Of Dependencies,Modifying It Will Lead You To An Error.
+  => Since Package-lock.json File Keeps The Details Of Our Applications Packages Version By Changing It It Will Might Intruduce To Version Conflic.
+
+# What Is '.node_modules' ? Is It Good Idea To Push That On Git?
+
+  => .node_modules Folder Is Created When We Install Any Dependencies For Our Application.
+  => .node_modeul Contains Every Packages,Library That Our Project Is Depend On.
+  => Everytime We Install Any Dependencies In Our Project It Goes In To Node_Moduels And Every Dependencies Have There Own Dependencies Because Of That Our Node Moduel Folder's File Size Increase.
+  => We Can Reinstall Node_Module Folder Simply By Typing NPM Install With Help Of Packgelog.json File We Can Dowanload Our Node_Module File
+  => That's Why It Is Not Recomedent To Push It To The Git.
+
+# What Is The '.Dist' Folder?
+
+  => .Dist Folder Is Output Directory Where Your React Code Is Compiled,Bundled,And Optimized For Production.
+  => Dist Folder Bundles And Minifies Our CODE During Build Process.
+  => It Optimize Our Code 
+
+# What Is Browserlist' ?
  
-  => Difference
-            => A FrameWork Is Collection Of Pre-Written Code That Provides A Structure For Devloping Applications. A Library On Other Hand Is A Collection Of Pre-Written Code That Can Be Used To Perform Specific Task.
-            => A Framework Defines The OverAll Architecture Of The Application And Provides A Common Set Of Conventions For Building And Maintaining The Code.Library Is Typically Smaller In Scope Than A Framework And Is Intended To Be Used As A Tool To Help Devlopers Accomplish Specific Tasks.
-
-
-# What Is CDN? Why Do We Use It?
-            => CDN Is Content Delivery Network CDN Is Geographycally Distributed Group Of Servers That Caches Content Close To End Users. A CDN Allows For The Quick Transfer Of Assets Needed For Loading Internet Content.
-            
-            # Reasons For Why We Use CDN
-                                        => Improving Website LoadTimes By Distributing Content Closer To Website Visitors By Using CDN Server Visitors Experience Faster Page Loading Time.
-                                        => Reducing Bandwidth Costs Bandwidth Consumption Costs For Website Hosting Is A Primary Expense For Websites,Through Caching And Other Optimizations CDNs Are Able To Reduce Thair Ammount Of The Data And Origin Server Must Provide.
-                                        => Improve Website Security-A CDN May Improve Security By Providing DDos Mitigation Improvements To Security Certificates.
-
-# Why React Known As React?
-            =>  React Is Javascript Library For Building User Interfaces The Name React Was Chosen Because It Is Meant To Help Devlopers Build User Interfaces That Are Fast And Responsive  Or The Library Was Designed To React To Changes In Data, That's Why React Known As React.
-
-# What Is Cross-origin In The Script Tag?
-            => The Cross-origin Attribute On Script Tag Specifies That Cors Is Supported When Loading And External Script File From A Third Party Server Or Domain.
-            => Cors Is A Standard Mechanism Used To Retrieve Files From Other Domains.
-            => The Crossorigin Attribute Set The Mode Of The Request To An HTTP CORS Request.Web Pages Often Make Request To Load Resources On Other Server.
-          
-# What Is Difference Between React And ReactDOM?
-            => React Is A Javascript Library For Building UserInterfaces And React Dom Is Javascript Library That Allows React To Interact With Dom.
-      
-# What Is Difference Between React.devlopment.js And React.production.js Files Via CDN?
-
-            => In Devlopment Mode We Can Enable And Utilize React Developer Tools Devtool Profiler Debugging Environment Attached With Source Code We Can Utilize Various Functionalities Such As Hot Module Replacement Diagnostics So That Development Enviornment Will Help Debug Code.
-
-            => In Production Mode Compression And Minification Of Javascript And Other Resources Happens To Reduce Size Of The Code Which Is Not The Case When It Comes To Devlopment Mode Performance Will Much Faster In Production Mode When Compared To Devlopment mode.
-            
-            => Serving This Files Via CDN There Are A Few Key Differences Between Them File Size The React Devlopment File Typically Larger In Size Compared To React Production Mode The Development Version Contains Additional Code Comments,And Debugging Information That Aids In Development And Trobolshooting On The Other Hand Production Version Is Optimized For Performance And Had Undergose Various Optimization.
-
-# What Is Async And Defer?
-            => Async And Defer Both Load Javascript Asyncronously Without Render Blocking But Async Executes As Soon As Possible While Defer Runs In Sequence Toward End Of The Loading Process Just Before The Domcontent Loaded Event.
-            => Async Allows Your Script To Run As Soon As It's Loaded, Without Blocking Other Elements On Page.
-            => Defer Means Your Script Will Only Execute After The Page Has Finished Loading.
+  => Browser List Makes Our App Compatiable For Older Version Of Browsers.
+  => We Have To Configure Our Packagelog.json File Tell Our Code To Which Browsers It Should Support.
+  => We Have To Give Array Of List In Packaglog.json File In Wich Browser Our Application Is Compatiable.
