@@ -1,0 +1,2 @@
+export const Nav_Logo_Url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Popeyes_logo.svg/800px-Popeyes_logo.svg.png';
+export const RESTRO_IMGS =  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
